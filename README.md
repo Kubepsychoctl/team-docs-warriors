@@ -6,12 +6,15 @@ General description here...
 
 ## Team
 
-List of team members here...
+- Carol - Cloud Engineer
 
 ## Technology Stack
 
-Technologies here...
+- Terraform
+- AWS
 
 ## Setup Instructions
 
-Steps to run the project here...
+1. Install Terraform
+2. Run terraform init
+3. Run terraform apply
