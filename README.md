@@ -8,6 +8,7 @@ General description here...
 
 - Alice - DevOps Lead
 - Bob - CI/CD Engineer
+- Carol - Cloud Engineer
 
 ## Technology Stack
 
@@ -15,6 +16,8 @@ General description here...
 - Kubernetes
 - Jenkins
 - Linux
+- Terraform
+- AWS
 
 ## Setup Instructions
 
@@ -24,3 +27,6 @@ General description here...
 4. Install Jenkins
 5. Configure pipeline
 6. Run first build
+7. Install Terraform
+8. Run terraform init
+9. Run terraform apply
