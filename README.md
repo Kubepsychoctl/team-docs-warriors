@@ -6,12 +6,15 @@ General description here...
 
 ## Team
 
-List of team members here...
+- Alice - DevOps Lead
 
 ## Technology Stack
 
-Technologies here...
+- Docker
+- Kubernetes
 
 ## Setup Instructions
 
-Steps to run the project here...
+1. Install Docker
+2. Run docker compose up
+3. Open localhost:8080
