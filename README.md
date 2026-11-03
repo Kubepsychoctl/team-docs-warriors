@@ -6,12 +6,15 @@ General description here...
 
 ## Team
 
-List of team members here...
+- Bob - CI/CD Engineer
 
 ## Technology Stack
 
-Technologies here...
+- Jenkins
+- Linux
 
 ## Setup Instructions
 
-Steps to run the project here...
+1. Install Jenkins
+2. Configure pipeline
+3. Run first build
