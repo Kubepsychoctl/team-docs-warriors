@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Docker Shop</title>
+  <style>
+    body { font-family: Arial; max-width: 800px; margin: 50px auto; }
+    .product { border: 1px solid #ddd; padding: 20px; margin: 10px 0; }
+    button { padding: 10px 20px; background: #0E4C92; color: white;
+             border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>🛒 Docker Shop</h1>
+  <div id="products"></div>
+  <h2>Корзина</h2>
+  <div id="cart"></div>
+
+  <script>
+    const API = "http://localhost:5000";
+
+    // Загрузить товары
+    fetch(`${API}/products`)
+      .then(r => r.json())
+      .then(products => {
+        document.getElementById("products").innerHTML = products.map(p => `
+          <div class="product">
+            <h3>${p.name} - $${p.price}</h3>
+            <button onclick="addToCart(${p.id})">Добавить в корзину</button>
+          </div>
+        `).join("");
+      });
+
+    // Добавить в корзину
+    function addToCart(id) {
+      fetch(`${API}/cart/add/${id}`, { method: "POST" })
+        .then(() => loadCart());
+    }
+
+    // Загрузить корзину
+    function loadCart() {
+      fetch(`${API}/cart`)
+        .then(r => r.json())
+        .then(cart => {
+          document.getElementById("cart").innerHTML =
+            `Товаров: ${cart.count}, Сумма: $${cart.total}`;
+        });
+    }
+    loadCart();
+  </script>
+</body>
+</html>
