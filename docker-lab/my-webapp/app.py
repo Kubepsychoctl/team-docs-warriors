@@ -10,7 +10,7 @@ def home():
     <body style="font-family: Arial; text-align: center; padding: 50px;">
         <h1 style="color: #0E4C92;">🐳 Привет из Docker!</h1>
         <p style="font-size: 20px;">
-            <strong>Меня зовут:</strong> [ВАШЕ ИМЯ]
+            <strong>Меня зовут:</strong> Kubepsychoctl
         </p>
         <p style="color: gray;">
             Время на сервере: {}
