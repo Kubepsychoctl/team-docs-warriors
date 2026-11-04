@@ -1,0 +1,11 @@
+# Секреты не коммитим!
+.env
+.env.development
+.env.production
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.pyc
+venv/

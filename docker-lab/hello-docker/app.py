@@ -1,0 +1,5 @@
+print("=" * 50)
+print("Привет из Docker!")
+print("Моё имя: Kubepsychoctl")
+print("Этот код работает в контейнере!")
+print("=" * 50)
